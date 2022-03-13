@@ -21,6 +21,8 @@ def merge_sort(nums_list):
         # K is the iterator for the final sorted_list
         K = 0
 
+        index_need_to_be_sort = 0
+        # SORT
         while i < len(left) and j < len(right):
             if left[i] <= right[j]:
                 nums_list[K] = left[i]
@@ -35,6 +37,7 @@ def merge_sort(nums_list):
         # OR j has reached to the final index of the right_part
         # But its counterpart has not reached to its final one,
         # we need to solve the remaining
+        # Merge
         while i < len(left):
             nums_list[K] = left[i]
             i += 1
@@ -46,9 +49,10 @@ def merge_sort(nums_list):
             K += 1
 
 
-test_data = list(range(25))
-random.shuffle(test_data)
-print(test_data)
+if __name__ == "__main__":
+    test_data = list(range(5))
+    random.shuffle(test_data)
+    print(test_data)
 
-merge_sort(test_data)
-print(test_data)
+    merge_sort(test_data)
+    print(test_data)
