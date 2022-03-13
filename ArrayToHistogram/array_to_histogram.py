@@ -3,7 +3,7 @@ import numpy as np
 import random
 
 
-def plot_histogram(nums, red_index=0, green=0, picture_name_index = 0):
+def plot_histogram(nums, red_index=0, green=0, picture_name_index=0):
     plt.figure(figsize=(3, 2.6), dpi=300)
     plt.axis('off')
 
@@ -16,10 +16,8 @@ def plot_histogram(nums, red_index=0, green=0, picture_name_index = 0):
 
     plt.bar(x_axis, y_values, color=colors)
     # plt.show()
-    plt.savefig("../Picture/BubbleSort/bubble"+str(picture_name_index)+".png", bbox_inches='tight')
+    plt.savefig("../Picture/BubbleSort/bubble" + str(picture_name_index) + ".png", bbox_inches='tight')
     plt.close()
-
-
 
 
 if __name__ == "__main__":
