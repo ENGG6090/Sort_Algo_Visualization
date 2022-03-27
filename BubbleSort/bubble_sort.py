@@ -19,7 +19,7 @@ def bubble_sort(nums):
 
 
 if __name__ == "__main__":
-    test_data = list(range(25))
+    test_data = list(range(27))
     random.shuffle(test_data)
     steps = bubble_sort(test_data)
 
